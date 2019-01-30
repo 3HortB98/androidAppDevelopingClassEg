@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName"
+        android:text="Name: "
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etName"
+        android:layout_toRightOf="@id/tvAddress"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        android:lines="1"
+        android:inputType="textPersonName"
+        android:hint="Enter your name"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAge"
+        android:text="Age: "
+        android:layout_below="@id/etName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etAge"
+        android:layout_below="@id/etName"
+        android:layout_toRightOf="@id/tvAge"
+        android:layout_alignLeft="@id/etAddress"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:maxLines="1"
+        android:hint="Enter your age"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAddress"
+        android:text="Address: "
+        android:layout_below="@id/etAge"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etAddress"
+        android:layout_below="@id/etAge"
+        android:layout_toRightOf="@id/tvAddress"
+        android:layout_alignLeft="@id/etName"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter your address"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvGender"
+        android:text="Gender: "
+        android:layout_below="@id/etAddress"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+   <!-- <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etGender"
+        android:layout_below="@id/etAddress"
+        android:layout_toRightOf="@id/tvGender"
+        android:layout_alignLeft="@id/etName"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        />-->
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvGender"
+        android:layout_below="@id/etAddress"
+        android:id="@+id/genderSpinner"
+
+        >
+    </Spinner>
+    <TextView
+        android:id="@+id/textview_dl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Driving License: "
+        android:layout_below="@id/tvGender"
+         />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/genderSpinner"
+        android:layout_toRightOf="@id/textview_dl"
+        android:id="@+id/radioGrp"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnYes"
+            android:text="Yes"
+            android:onClick="onRadioButtonClicked"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNo"
+            android:text="No"
+            android:onClick="onRadioButtonClicked"
+            />
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_submit"
+        android:layout_below="@id/radioGrp"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        />
+    <TextView
+        android:id="@+id/textview_Combination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_submit"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text=""
+        android:textSize="20sp" />
+    </RelativeLayout>
+
+
+</ScrollView>

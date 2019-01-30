@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ClassExample1</string>
+    <string-array name="gender_choices">
+        <item>Select a gender...</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Gender neutral</item>
+        <item>Other</item>
+        <item>Prefer not to say</item>
+        </string-array>
+</resources>
